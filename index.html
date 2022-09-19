@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <main class="mainContainer">
+    <div class="leftBox">
+
+  <h1 class="header">Learn to code by watching others</h1>
+
+  <p class="headerDescription">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.</p> 
+    </div>
+
+    <div class="rightBox">
+
+  <div class="price"><strong>Try it free 7 days</strong> then $20/mo. thereafter</div>
+  
+  
+  <form id="myForm" class="myForm" >
+
+
+  <input id="fname"  type="text" placeholder="  First Name" oninvalid = "setCustomValidity(' ')" required>
+  <div class="error" id="firstname">First Name cannot be empty <img src="images/icon-error.svg" alt="error"></div>
+
+
+
+  <input id="lname" type="text" placeholder="   Last Name" oninvalid = "setCustomValidity(' ')" required>
+  <div class="error" id="lastname">Last Name cannot be empty <img src="images/icon-error.svg" alt="error"></div>
+
+
+   
+  <input id="myemail"  type="email" placeholder="   Email Address" oninvalid = "setCustomValidity(' ')" required>
+  <div class="error" id="email">Looks like this is not an email <img src="images/icon-error.svg" alt="error"></div>
+
+
+  
+  <input id="mypassword"  type="password" placeholder="   Password" minlength="6" oninvalid = "setCustomValidity(' ')" required>
+  <div class="error" id="password">Password cannot be empty <img src="images/icon-error.svg" alt="error"></div>
+
+
+  
+  <input id="submit" class="submit" type="submit" onclick="myfunction()"  value="CLAIM YOUR FREE TRIAL">
+  <p class="termsCond">By clicking the button, you are agreeing to our
+    <a href="#"><span class="terms">Terms and Services</span></a>
+  </form>
+
+  </main>
+  
+  <footer id="myFooter">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
